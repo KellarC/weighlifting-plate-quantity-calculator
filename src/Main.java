@@ -57,7 +57,7 @@ public class Main {
                         } else {
                             weightText = decimalFormat.format(plate.getWeight());
                         }
-                        System.out.println(weightText + "lb per side: " + plateQuantities.get(i));
+                        System.out.println(weightText + " lb per side: " + plateQuantities.get(i));
                     });
         } catch (Exception e) {
             throw new RuntimeException(e);
