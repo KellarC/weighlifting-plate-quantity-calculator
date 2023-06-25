@@ -9,7 +9,7 @@ The weight calculator is a lightweight Java program that helps determine the num
 ## Features
 
 - Input a desired weight in pounds (lbs)
-- Exception handling for input not divisible by 5 or less than 45 lbs.
+- Exception handling for input not divisible by 5 or less than 45 lbs
 - Calculates the number of weight plates required for each plate size:
   - 45 lb plates
   - 25 lb plates
