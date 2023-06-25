@@ -13,16 +13,17 @@ public class Main {
     static final Plate FIVE = new Plate(5);
     static final Plate TWO_AND_HALF = new Plate(2.5);
     static List<Plate> PLATES = Arrays.asList(FORTY_FIVE, TWENTY_FIVE, TEN, FIVE, TWO_AND_HALF);
+
     public static int getWeight() {
         Scanner x = new Scanner(System.in);  // Create a Scanner object
         while (true) {
             try {
-                System.out.println("Enter desired weight in lbs (ex. '335'): ");
+                System.out.println("Enter desired weight in lbs (ex. 335): ");
                 int input = x.nextInt();  // Read user input
                 if (!(input % 5 == 0)) {
                     throw new IllegalArgumentException("Weight must be divisible by 5.");
                 } else if (!(input >= 45)) {
-                    throw new IllegalArgumentException("Weight must be greater than or equal to 45lbs");
+                    throw new IllegalArgumentException("Weight must be greater than or equal to 45 lbs");
                 }
                 return input;
             } catch (Exception e) {
@@ -31,6 +32,7 @@ public class Main {
             }
         }
     }
+
     public static List<Integer> analyze(int weight) {
         final int remainingWeight = weight - BAR;
         final int[] weightHolder = { remainingWeight };
